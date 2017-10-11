@@ -12,10 +12,10 @@ router.get('/', (req, res, next) => {
 router.delete('/:id', (req, res) => {
     res.json({
         message: 'Success!',
-        id: eq.params.id
+        id: req.params.id
     });
 
-    // Definition.findOne({ _id: req.params.myid, owner: req.user})
+    // Definition.findOne({ _id: req.params.id, owner: req.user})
     // .then((definition) => {
     //     definition.remove().then((definition) => {
     //         res.json({
